@@ -2,7 +2,7 @@ import streamlit as st
 from auto_gene import read_txt, random_gene, random_gene_words
 from replace_nlp import change_sentence
 from dict import get_batch_idioms
-#  pip freeze requirements.txt
+#  pip3 freeze requirements.txt
 # markdown
 
 from PIL import Image
