@@ -8,7 +8,7 @@ from dict import get_batch_idioms
 from PIL import Image
 #image1 = Image.open('WX20220528-134651@2x.png')
 # 设置网页标题
-st.title('《献礼工程》 -- 电子诗人')
+st.title('电子诗人')
 
 #st.image(image1)
 
@@ -31,7 +31,7 @@ if add_radio == "电子唱诗":
     crazy_level = st.slider('癫狂程度 【0 分清醒 - 100 分疯狂】', min_value=0.00, max_value=1.00, value=0.5,
                           step=0.01)
 
-    if st.button('我要献礼！'):
+    if st.button('开始写诗！'):
         with st.spinner("生成中........"):
 
             st.balloons()
@@ -46,7 +46,7 @@ if add_radio == "电子唱诗":
                 st.markdown(text)
                 count = count + 1
     else:
-        st.warning('还没献礼呢！')
+        st.warning('还没写呢！')
 
 elif "来点儿词汇":
 
@@ -71,7 +71,7 @@ elif "来点儿词汇":
                 #st.markdown(i)
 
     else:
-        st.write('还没献礼')
+        st.write('还没写呢')
 
 
 
