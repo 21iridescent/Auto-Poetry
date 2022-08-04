@@ -8,8 +8,8 @@ from dict import get_batch_idioms
 from PIL import Image
 #image1 = Image.open('WX20220528-134651@2x.png')
 # 设置网页标题
-st.title('电子诗人')
-
+st.title('浮于野的狄俄尼索斯')
+st.subheader('Dionysus in No.46 Anju Str.')
 #st.image(image1)
 
 # 展示一级标题
