@@ -6,16 +6,16 @@ from dict import get_batch_idioms
 # markdown
 
 from PIL import Image
-image1 = Image.open('WX20220528-134651@2x.png')
+#image1 = Image.open('WX20220528-134651@2x.png')
 # 设置网页标题
 st.title('《献礼工程》 -- 电子诗人')
 
-st.image(image1)
+#st.image(image1)
 
 # 展示一级标题
 #st.subheader('献礼工程')
 
-image2 = Image.open('v2-3420614c84c85bba28ec098d771fb27d_1440w.jpg')
+#image2 = Image.open('v2-3420614c84c85bba28ec098d771fb27d_1440w.jpg')
 
 with st.sidebar:
     add_radio = st.radio(
@@ -76,4 +76,4 @@ elif "来点儿词汇":
 
 
 
-st.image(image2)
+#st.image(image2)
