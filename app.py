@@ -6,11 +6,12 @@ from dict import get_batch_idioms
 # markdown
 
 from PIL import Image
-#image1 = Image.open('WX20220528-134651@2x.png')
+image1 = Image.open('pic/上条纹.png')
+image2 = Image.open('pic/下条纹.png')
 # 设置网页标题
 st.title('浮于野的狄俄尼索斯')
 st.subheader('Dionysus in No.46 Anju Str.')
-#st.image(image1)
+st.image(image1)
 
 # 展示一级标题
 #st.subheader('献礼工程')
@@ -73,7 +74,7 @@ elif "来点儿词汇":
     else:
         st.write('还没写呢')
 
-
+st.image(image2)
 
 
 #st.image(image2)
