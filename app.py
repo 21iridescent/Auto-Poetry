@@ -29,7 +29,7 @@ if add_radio == "电子唱诗":
     lucky_num = st.slider('选择你的幸运数字吧！', min_value=0, max_value=100, value=50,
                           step=1)
 
-    crazy_level = st.slider('癫狂程度 【0 分清醒 - 100 分疯狂】', min_value=0.00, max_value=1.00, value=0.5,
+    crazy_level = st.slider('酒神程度 [0 分清醒 - 100 分疯狂]', min_value=0.00, max_value=1.00, value=0.5,
                           step=0.01)
 
     if st.button('开始写诗！'):
@@ -37,7 +37,7 @@ if add_radio == "电子唱诗":
 
             st.balloons()
 
-            result = read_txt('存档.txt')
+            result = read_txt('词库/存档.txt')
             text = random_gene(lucky_num, result)
             text = list(filter(None, text))
             count = 0
@@ -59,7 +59,7 @@ elif "来点儿词汇":
 
             st.balloons()
 
-            result = read_txt('存档.txt')
+            result = read_txt('词库/存档.txt')
             a, b, c , d= random_gene_words(lucky_num)
             e = get_batch_idioms()
             st.subheader(a)
