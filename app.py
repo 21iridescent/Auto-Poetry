@@ -31,7 +31,7 @@ if add_radio == "电子唱诗":
     lucky_num = st.slider('请选择你的幸运数字', min_value=0, max_value=100, value=50,
                           step=1)
 
-    crazy_level = st.slider('请选择酒神精神的多少 [0 分清醒 - 100 分疯狂]', min_value=0.00, max_value=1.00, value=0.5,
+    crazy_level = st.slider('请制定酒神精神 [0 分清醒 - 100 分疯狂]', min_value=0.00, max_value=1.00, value=0.5,
                           step=0.01)
 
     if st.button('我想写一首！'):
@@ -51,7 +51,7 @@ if add_radio == "电子唱诗":
                 st.markdown(text)
                 count = count + 1
     else:
-        st.warning('酒神在沉默！')
+        st.warning('酒神在沉默... ...')
 
 elif "来点儿词汇":
 
@@ -59,7 +59,7 @@ elif "来点儿词汇":
                           step=1)
 
     if st.button('我要献礼！'):
-        with st.spinner("生成中........"):
+        with st.spinner("召唤来的文字在被重新组合，请稍等........"):
 
             st.balloons()
 
