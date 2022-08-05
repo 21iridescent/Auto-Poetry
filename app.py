@@ -28,13 +28,13 @@ with st.sidebar:
 
 if add_radio == "电子唱诗":
 
-    lucky_num = st.slider('选择你的幸运数字吧！', min_value=0, max_value=100, value=50,
+    lucky_num = st.slider('请选择你的幸运数字', min_value=0, max_value=100, value=50,
                           step=1)
 
-    crazy_level = st.slider('酒神程度 [0 分清醒 - 100 分疯狂]', min_value=0.00, max_value=1.00, value=0.5,
+    crazy_level = st.slider('请选择酒神精神的多少 [0 分清醒 - 100 分疯狂]', min_value=0.00, max_value=1.00, value=0.5,
                           step=0.01)
 
-    if st.button('开始写诗！'):
+    if st.button('我想写一首！'):
         with st.spinner("生成中........"):
             time.sleep(5)
 
@@ -44,13 +44,14 @@ if add_radio == "电子唱诗":
             text = random_gene(lucky_num, result)
             text = list(filter(None, text))
             count = 0
+
             for i in text:
                 #st.success(text)
                 text = change_sentence(i, lucky_num+count, crazy_level)
                 st.markdown(text)
                 count = count + 1
     else:
-        st.warning('还没写呢！')
+        st.warning('酒神在沉默！')
 
 elif "来点儿词汇":
 
