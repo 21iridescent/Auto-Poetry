@@ -1,3 +1,5 @@
+import time
+
 import streamlit as st
 from auto_gene import read_txt, random_gene, random_gene_words
 from replace_nlp import change_sentence
@@ -34,6 +36,7 @@ if add_radio == "电子唱诗":
 
     if st.button('开始写诗！'):
         with st.spinner("生成中........"):
+            time.sleep(5)
 
             st.balloons()
 
