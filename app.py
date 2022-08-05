@@ -110,7 +110,4 @@ elif "来点儿词汇":
         st.write('还没写呢')
 
 st.image(image2)
-
-
-#st.image(image2)
 '''
