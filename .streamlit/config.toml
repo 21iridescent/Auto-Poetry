@@ -364,9 +364,9 @@ base = 'dark'
 
 # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
 font = 'monospace'
-
+textColor = "#DCDCDC"
 primaryColor = "#E694FF"
 backgroundColor = "#00172B"
 secondaryBackgroundColor = "#0083B8"
-textColor = "#DCDCDC"
+
 #font = "sans-serif"
