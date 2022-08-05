@@ -46,12 +46,12 @@ if st.button('我想写一首！'):
         count = 0
 
         for i in text:
-        #st.success(text)
-        text = change_sentence(i, lucky_num+count, crazy_level)
-        st.markdown(text)
-        count = count + 1
-    else:
-        st.warning('酒神在沉默... ...')
+            #st.success(text)
+            text = change_sentence(i, lucky_num+count, crazy_level)
+            st.markdown(text)
+            count = count + 1
+else:
+    st.warning('酒神在沉默... ...')
 
 st.image(image2)
 
